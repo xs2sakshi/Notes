@@ -1,0 +1,22 @@
+Compile time errors:
+->final and volatile not allowed together
+->private and protected not allowed in interface
+
+Pointers
+->default allowed in interface from Java 8 ->must have implementation 
+->Subclass can override implementation of a method but making it abstract
+-> == compares references
+->equals() compares values
+-when an exception occurs in a thread thread will die, but When a thread is about to terminate due to an uncaught exception the Java 
+Virtual Machine will query the thread for its UncaughtExceptionHandler using Thread.getUncaughtExceptionHandler() and will invoke the handler's 
+uncaughtException() method, passing the thread and the exception as arguments.
+
+->when we serialise the object of a class which implements serializable but it has a ref to a non-Serializable class it throw NotSeriableException.
+-> no static or transient fields undergo default serialization
+
+Immutable objects:
+Do not return the instance of the class but only return a copy of the object
+
+hashode()-> it beongs to Object class and uses the address of the object and converts it to integer
+equals->when we overide equals, we change meaning of equality and hence same should ber eflected by overridding hashcode
+
